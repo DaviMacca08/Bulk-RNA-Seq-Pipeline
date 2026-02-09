@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # Bulk RNA-seq Analysis – DESeq2 workflow
 
 ![R](https://img.shields.io/badge/R-Bioconductor-blue)
