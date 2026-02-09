@@ -3,9 +3,11 @@ library(pheatmap)
 library(tidyverse)
 library(DESeq2)
 
+
 # ------------------------------------------
 #            Exploratory Data Analysis
 # ------------------------------------------
+
 # 01-Load DESeq object
 
 dds <- readRDS("dds.rds")

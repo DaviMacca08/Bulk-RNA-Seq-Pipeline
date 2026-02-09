@@ -1,6 +1,7 @@
 library(DESeq2)
 library(ggplot2)
 
+
 # ------------------------------------------
 #            Building DESeq Object
 # ------------------------------------------
@@ -45,7 +46,7 @@ dds <- DESeq(dds)
 
 vsdata <- vst(dds, blind = FALSE)
 
-pdf("01_PCA_vsdata.pdf")
+pdf("01_PCA_VstData.pdf")
 pca <- plotPCA(vsdata, intgroup = "condition")
 pca + ggtitle("PCA - KGN cells, siOGT vs Control")
 dev.off()
@@ -59,3 +60,4 @@ dev.off()
 message("DESeq2 object built with ", nrow(dds), " genes and ", ncol(dds), " samples")
 
 saveRDS(dds, "dds.rds")
+writeLines(rownames(vsdata), "background_genes.txt")
