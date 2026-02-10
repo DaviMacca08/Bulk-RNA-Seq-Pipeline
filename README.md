@@ -159,7 +159,7 @@ Statistical testing was performed using:
 
 Genes were classified as differentially expressed if they satisfied:
 
--   adjusted *p*-value (`padj`) \< 0.05\
+-   adjusted *p*-value (`padj`) \< 0.05
 -   absolute log2 fold change \> 0.5
 
 📁 Figures saved in: `downstream/images/03_DEGs/`
